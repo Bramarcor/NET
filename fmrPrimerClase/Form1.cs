@@ -14,21 +14,24 @@ namespace fmrPrimerClase
     {
         private int valorCalculado = 0;
 
+
         public Form1()
         {
             InitializeComponent();
         }
+
 
         private void Form1_Load(object sender, EventArgs e)
         {
 
         }
 
-
-
+        
+        #region Evento Click
         private void btnCalcular_Click(object sender, EventArgs e)
         {
-            valorCalculado = Convert.ToInt32(this.txtNumeroUno.Text) + Convert.ToInt32(this.txtNumeroDos.Text);
+            //El Void indica que esta funcion no retorna ningun valor
+            valorCalculado = sumarNumeros(this.txtNumeroUno.Text, this.txtNumeroDos.Text);
 
             // El Sigo $ Permite junto con las llaves mostrar el valor de una variable
             // Sin el signo no lo permite
@@ -37,6 +40,20 @@ namespace fmrPrimerClase
 
             MessageBox.Show($"La Suma Es: {valorCalculado}");
         }
+        #endregion
 
+        
+        #region Metodo Suma
+        private int sumarNumeros(string num1, string num2)
+        {
+            //el int antes de la funcion indica que va a retornar un valor entero
+            int valorAuxiliar = 0;
+
+            valorAuxiliar = Convert.ToInt32(num1) + Convert.ToInt32(num2);
+
+            return valorAuxiliar;
+        }
+
+        #endregion
     }
 }
