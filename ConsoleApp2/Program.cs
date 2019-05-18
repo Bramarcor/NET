@@ -50,7 +50,7 @@ namespace ConsoleApp2
             int segundoTermino = 1;
             int resultado = 0;
 
-            for (int i = 0; i <= cantidadSumas; i++)
+            for (int i = 0; i <= (cantidadSumas-1); i++)
             {
                 resultado = primerTermino + segundoTermino;
                 Console.WriteLine($"{primerTermino} + {segundoTermino} = {resultado}");
