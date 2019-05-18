@@ -14,6 +14,7 @@ namespace ConsoleApp2
             double centigrados;
             double fahrenheit;
             string ingresoConsola;
+            int longitudSerieFibo = 0;
             Console.WriteLine("Escribe una temperatura °C: ");
             // se ingresa un string y lo convierte si no se puede convertir tira error
             //centigrados = Convert.ToDouble(Console.ReadLine());
@@ -29,13 +30,34 @@ namespace ConsoleApp2
 
             Console.WriteLine($"Los grados {centigrados} °C son en Fahrenheit {fahrenheit} °F");
             Console.WriteLine(9.0/5); // Test, si no esta 1 numero en double, trunca los decimales.
-            Console.ReadKey();
+            
 
+            Console.WriteLine("Ingresa la longitud de la serie de Fibonaci:");
+            ingresoConsola = Console.ReadLine();
+            int.TryParse(ingresoConsola, out longitudSerieFibo);
+            serieFibo(longitudSerieFibo);
+            Console.ReadKey();
         }
 
         private static double gradosCaF(double centi)
         {
             return (((9.0 / 5.0) * centi) + 32);
         }
+
+        private static void serieFibo(int cantidadSumas)
+        {
+            int primerTermino = 1;
+            int segundoTermino = 1;
+            int resultado = 0;
+
+            for (int i = 0; i <= cantidadSumas; i++)
+            {
+                resultado = primerTermino + segundoTermino;
+                Console.WriteLine($"{primerTermino} + {segundoTermino} = {resultado}");
+                primerTermino = segundoTermino;
+                segundoTermino = resultado;
+            }
+        }
+
     }
 }
