@@ -38,7 +38,9 @@ namespace fmrPrimerClase
 
             //MessageBox.Show("La Suma Es: " + valorCalculado);
 
-            MessageBox.Show($"La Suma Es: {valorCalculado}");
+            this.lblResultado.Text = $"Resultado de la suma Es: {valorCalculado}";
+            this.lblResultado.Visible = true;
+            
         }
         #endregion
 
