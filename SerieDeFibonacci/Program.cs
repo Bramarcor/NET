@@ -17,6 +17,7 @@ namespace CentigradosaFaherenheit
             int.TryParse(ingresoConsola, out longitudSerieFibo);
             serieFibo(longitudSerieFibo);
 
+
             Console.ReadKey();
         }
 
