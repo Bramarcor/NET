@@ -5,9 +5,9 @@ VisualStudioVersion = 16.0.28803.452
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "fmrPrimerClase", "fmrPrimerClase\fmrPrimerClase.csproj", "{36673B5B-4D2A-46AA-A1F7-369BD7D37E71}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FahrenheitACentigrados", "ConsoleApp2\FahrenheitACentigrados.csproj", "{46BFF94C-60C3-49D5-A3F4-D4E2EBEC4559}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FahrenheitACentigrados", "FahrenheitACentigrados\FahrenheitACentigrados.csproj", "{46BFF94C-60C3-49D5-A3F4-D4E2EBEC4559}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SerieDeFibonacci", "CentigradosaFaherenheit\SerieDeFibonacci.csproj", "{035B3531-62EF-423C-8BA7-794C7E218076}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SerieDeFibonacci", "SerieDeFibonacci\SerieDeFibonacci.csproj", "{035B3531-62EF-423C-8BA7-794C7E218076}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
