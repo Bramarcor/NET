@@ -32,9 +32,14 @@ namespace ConsoleApp2
             Console.WriteLine($"Los grados {centigrados} °C son en Fahrenheit {fahrenheit} °F");
             Console.ReadKey();
         }
-
+        /// <summary>
+        /// explicacion del metodo que hace
+        /// </summary>
+        /// <param name="centi">que es lo que solicita el metodo en los parametros</param>
+        /// <returns>que es lo que retorna</returns>
         private static double gradosCaF(double centi)
         {
+            //el sumari 
             return (((9.0 / 5.0) * centi) + 32);
         }
 
